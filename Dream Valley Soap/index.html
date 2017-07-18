@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <title>Dream Valley Soap</title>
+</head>
+
+<body ng-app="main">
+    <div class="header">
+        <h1 class="logo">Dream Valley Soap</h1>
+        <h3>Natural Handmade Soap</h3>
+    </div>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="menuItems"><a href="#" class="menuLinks">HOME</a></li>
+            <li class="menuItems dropdown">
+                <a href="#" class="menuLinks dropbtn">PRODUCTS</a>
+                <div class="dropdown-content">
+                    <a href="#" class="menuLinks">Traditional Soap</a>
+                    <a href="#" class="menuLinks">Coconut & Clay Soap</a>
+                    <a href="#" class="menuLinks">Bath & Body</a>
+                    <a href="#" class="menuLinks">Balms</a>
+                </div>
+            </li>
+            <li class="menuItems dropdown">
+                <a href="#" class="menuLinks dropbtn">INFO</a>
+                <div class="dropdown-content">
+                    <a href="#" class="menuLinks">FAQ's</a>
+                    <a href="#" class="menuLinks">Soap Care</a>
+                </div>
+            </li>
+            <li class="menuItems"><a href="#" class="menuLinks">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div class="displayArea">
+        <ng-view></ng-view>
+    </div>
+    <script src="lib/AngularJS/angular.min.js"></script>
+    <script src="lib/AngularJS/angular-route.js"></script>
+    <script src="lib/ReactJS/react.js"></script>
+    <script src="lib/ReactJS/react-dom.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
