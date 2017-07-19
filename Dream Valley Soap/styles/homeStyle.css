@@ -1,0 +1,42 @@
+.homeTable {
+    width: 100%;
+}
+
+.homeInfo {
+    width: 70%;
+    float: left;
+}
+
+.latestNews {
+    width: 29%;
+    float: right;
+}
+
+.slides {
+    display: none;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}

@@ -1,6 +1,83 @@
+<link rel="stylesheet" href="styles/homeStyle.css">
 <div>
-    <h2>HOME</h2>
-    <p>"Standard information"</p>
-    <h3>Latest News</h3>
-    <p>Load a html file into here???</p>
+    <table class='homeTable'>
+        <tr class='homeTableRow'>
+            <td class='homeInfo'>
+                <div>
+                    <h3>HOME</h3>
+                    <table>
+                        <tr>
+                            <td style="width:65%">
+                                <p>
+                                    Dream Valley Soap makes soap; balms and creams. All our products are carefully handcrafted with quality natural oils and ingredients sourced locally.
+                                </p>
+                                <p>
+                                    Our Soaps are handcrafted with quality oils and lightly scented with essential oils and herbs. After a good long maturing time they are mild, nourishing and moisturising. Luxury and goodness in a decadent bar.
+                                </p>
+                            </td>
+                            <td style="width:30%">
+                                <div class="slideshow">
+                                    <div class="slides fade">
+                                        <img src="./img/Home/basket.jpg" style="width:60%; border-radius:3px">
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="./img/Home/Lip Rescue Balm.jpg" style="width:60%; border-radius:3px">
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="./img/Home/round hand.jpg" style="width:60%; border-radius:3px">
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="./img/Home/skin rescue roller.jpg" style="width:60%; border-radius:3px">
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="./img/Home/traditional.jpg" style="width:60%; border-radius:3px">
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="./img/Home/ultimate foot soak.jpg" style="width:60%; border-radius:3px">
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="./img/Home/venus range.jpg" style="width:60%; border-radius:3px">
+                                    </div>
+                                </div>
+                                <script>
+                                    var slideIndex = 0;
+                                    showSlides();
+
+                                    function showSlides() {
+                                        var i;
+                                        var slides = document.getElementsByClassName("slides");
+                                        for (i = 0; i < slides.length; i++) {
+                                            slides[i].style.display = "none";
+                                        }
+                                        slideIndex++;
+                                        if (slideIndex > slides.length) {
+                                            slideIndex = 1
+                                        }
+                                        slides[slideIndex - 1].style.display = "block";
+                                        setTimeout(showSlides, 2000);
+                                    }
+                                </script>
+                            </td>
+                        </tr>
+                    </table>
+                    <ul>
+                        <li>Bio-degradable; no added chemicals; SLES free.</li>
+                        <li>Is grey water and septic tank safe.</li>
+                        <li>Contains no animal products.</li>
+                        <li>Is excellent for all types of skins.</li>
+                        <li>Lathers, moisturizes and washes beautifully.</li>
+                    </ul>
+                    <p>
+                        *Our soaps are handcrafted and hand cut and, as a result, may have some minor cosmetic and weight differences.*
+                    </p>
+                </div>
+            </td>
+            <td class='latestNews'>
+                <div>
+                    <h3>LATEST NEWS</h3>
+                    <p>Visit us at the Groenstoor market Saturday 5 August 2017</p>
+                </div>
+            </td>
+        </tr>
+    </table>
 </div>
