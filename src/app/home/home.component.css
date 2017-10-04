@@ -6,10 +6,6 @@
     font-size: 20px;
 }
 
-.carousel-img{
-    max-height: 250px;
-}
-
 .carousel-pane{
     background-color: #4E005A;
     padding: 5px;
@@ -17,7 +13,6 @@
     border-radius: 10px;
     margin: 40px 13px;
     box-shadow: 0px 2px 5px black;
-    max-height: 260px;
     height: auto;
 }
 
@@ -42,6 +37,7 @@
 
 .latest-news{
     box-shadow: 0px 1px 2px #A41D9A;
+    width: auto;
 }
 
 .list-heading{

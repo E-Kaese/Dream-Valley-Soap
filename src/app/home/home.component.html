@@ -6,7 +6,7 @@
         <br>
         <br>
         <div class="row justify-content-center">
-            <div class="col-md-5 col-sm-9 list">
+            <div class="col-md-6 col-sm-9 list">
                 <u class="list-heading">Luxury and goodness in a decadent bar.</u>
                 <br>
                 <ul class="styled-list">
@@ -16,27 +16,10 @@
                     <li>Is excellent for all types of skins.</li>
                     <li>Lathers, moisturizes and washes beautifully.</li>
                 </ul>
-                <br>
-                <button type="button" class="btn btn-dark latest-news" data-toggle="modal" data-target="#modal">Latest News</button>
-                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="Latest News" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="Label">Latest News</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                            <div class="modal-body row justify-content-center" (load)="onResize($event)" (window:resize)="onResize($event)">
-                                <iframe class="fb-page" [src]="fbLink" data-adapt-container-width="true" width="{{width}}px" height="450" style="border:none;overflow:hidden"
-                                    scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div id="carouselIndicators" class="carousel slide carousel-pane col-md-5 col-sm-8" data-ride="carousel">
+        </div>
+        <div class="row justify-content-center">
+            <div id="carouselIndicators" class="carousel slide carousel-pane col-md-6 col-sm-8" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -60,4 +43,21 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="Latest News" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="Label">Latest News</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body row justify-content-center" (load)="onResize($event)" (window:resize)="onResize($event)">
+                        <iframe class="fb-page" [src]="fbLink" data-adapt-container-width="true" width="{{width}}px" height="450" style="border:none;overflow:hidden"
+                            scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
