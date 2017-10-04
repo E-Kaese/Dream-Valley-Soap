@@ -1,0 +1,11 @@
+<div class="products">
+  <div class="header container">
+    <h3>{{heading}}</h3>
+    <p>{{content}}</p>
+  </div>
+  <div class="row justify-content-center m-0 cards">
+    <div *ngFor="let item of data | async" class="col-md-4">
+      <app-card [url]="[item.src]" [alt]="[item.alt]" [title]="[item.title]" [text]="[item.text]"></app-card>
+    </div>
+  </div>
+</div>

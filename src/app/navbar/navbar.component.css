@@ -1,0 +1,43 @@
+.heading{
+    font-family: Vivaldi, cursive;
+    font-size: 48px;
+    color: #BB16AE !important;
+}
+
+.navigation{
+    background-color: #383838;
+    width: 100%;
+    min-height: 55px;
+    font-size: 18px;
+    float: right;
+    vertical-align: middle;
+    box-shadow: 0px 2px 2px #A41D9A;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #A41D9A;
+}
+
+.hamburger{
+    border-color: #A41D9A;
+}
+
+.dropdown-item:hover{
+    background-color: #383838;
+    color: white;
+}
+
+.nav-item{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .heading{
+        font-size: 32px;
+    }
+}

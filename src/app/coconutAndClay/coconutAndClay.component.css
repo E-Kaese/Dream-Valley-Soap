@@ -1,0 +1,9 @@
+.fragrances{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.fragrances > ul{
+    list-style-type: circle;
+}

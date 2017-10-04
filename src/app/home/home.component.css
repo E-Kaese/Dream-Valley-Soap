@@ -1,0 +1,65 @@
+.home{
+    color: #383838;
+    padding: 30px;
+    background-color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+}
+
+.carousel-img{
+    max-height: 250px;
+}
+
+.carousel-pane{
+    background-color: #4E005A;
+    padding: 5px;
+    border: 5px solid #6A007A;
+    border-radius: 10px;
+    margin: 40px 13px;
+    box-shadow: 0px 2px 5px black;
+    max-height: 260px;
+    height: auto;
+}
+
+.facebook-pane{
+    background-color: #494949;
+    width: 100%;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.list{
+    padding-top: 20px;
+}
+
+.list > ul{
+    list-style-type: circle;
+}
+
+.text{
+    padding-right: 4%;
+}
+
+.latest-news{
+    box-shadow: 0px 1px 2px #A41D9A;
+}
+
+.list-heading{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content{
+    line-height: 30px;
+}
+
+.container{
+    border-top: 1px solid #E16BFB;
+    border-bottom: 1px solid #E16BFB;
+    margin: 40px 0px;
+    background-color: #F7D3FF;
+}
+
+.fb-buttons{
+    margin-top: 28px;
+}
