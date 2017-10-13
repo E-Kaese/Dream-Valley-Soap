@@ -24,3 +24,7 @@ h5{
 .collapser{
     color: #383838;
 }
+
+.collapser:hover{
+    text-decoration: none;
+}
