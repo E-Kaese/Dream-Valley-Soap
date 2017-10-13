@@ -1,16 +1,8 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('./assets/font-awesome-4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 html {
-    padding-top: 96px;
+    padding-top: 120px;
     font-family: 'Montserrat', sans-serif;
-}
-
-@media screen and (max-width: 800px) {
-    html{
-        padding-top: 75px;
-    }
 }

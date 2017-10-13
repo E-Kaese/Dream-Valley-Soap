@@ -4,6 +4,10 @@
     color: #BB16AE !important;
 }
 
+.logo{
+    max-height: 100px;
+}
+
 .navigation{
     background-color: #383838;
     width: 100%;

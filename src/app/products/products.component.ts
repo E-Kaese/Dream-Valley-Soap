@@ -27,7 +27,6 @@ export class ProductsComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.db);
     this.data = this.ref.list(this.db);
   }
 
