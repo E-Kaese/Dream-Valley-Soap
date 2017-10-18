@@ -1,6 +1,6 @@
 # Dream Valley Soap
 
-https://dvsoap.firebaseapp.com
+https://dvsoap.co.za
 
 # DVS
 
