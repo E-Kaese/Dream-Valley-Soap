@@ -1,8 +1,6 @@
 .faqs{
     color: #383838;
-    padding: 50px;
     background-color: white;
-    font-family: 'EB Garamond', serif;
     font-size: 20px;
 }
 
@@ -17,7 +15,6 @@ h5{
 .container{
     border-top: 1px solid #E16BFB;
     border-bottom: 1px solid #E16BFB;
-    margin: 40px 0px;
     background-color: #EEEEEE;
 }
 

@@ -1,15 +1,15 @@
-<nav class="navbar navbar-expand-md navbar-dark navigation fixed-top">
+<nav id="navbar" class="navbar navbar-expand-md navbar-dark navigation fixed-top">
     <a [routerLink]="['/home']">
         <img src="../../assets/img/logo.png" alt="Logo" class="navbar-brand img-fluid logo"/>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Content" aria-controls="Content" aria-expanded="false"
+    <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Content" aria-controls="Content" aria-expanded="false"
         aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
     <div class="collapse navbar-collapse" id="Content">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item" (click)="toggle()">
                 <a class="nav-link" [routerLink]="['/home']">HOME</a>
             </li>
 
@@ -18,18 +18,18 @@
                   PRODUCTS
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" [routerLink]="['/traditional']">Traditional Soap</a>
-                    <a class="dropdown-item" [routerLink]="['/coconutandclay']">Coconut & Clay Soap</a>
-                    <a class="dropdown-item" [routerLink]="['/bathandbody']">Bath & Body</a>
-                    <a class="dropdown-item" [routerLink]="['/balms']">Balms</a>
+                    <a class="dropdown-item" [routerLink]="['/traditional']" (click)="toggle()">Traditional Soap</a>
+                    <a class="dropdown-item" [routerLink]="['/coconutandclay']" (click)="toggle()">Coconut & Clay Soap</a>
+                    <a class="dropdown-item" [routerLink]="['/bathandbody']" (click)="toggle()">Bath & Body</a>
+                    <a class="dropdown-item" [routerLink]="['/balms']" (click)="toggle()">Balms</a>
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item" (click)="toggle()">
                 <a class="nav-link" [routerLink]="['/faq']">FAQ's</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item" (click)="toggle()">
                 <a class="nav-link" href="" data-toggle="modal" data-target="#modal">LATEST NEWS</a>
             </li>
         </ul>

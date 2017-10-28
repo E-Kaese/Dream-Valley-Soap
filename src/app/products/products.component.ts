@@ -1,9 +1,7 @@
+import { DatabaseService } from '../database.service';
 import { DomSanitizer } from '@angular/platform-browser';
-import { Component, OnInit, Input } from '@angular/core';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { AngularFireAuth } from 'angularfire2/auth';
-import { Observable } from 'rxjs/Observable';
-import * as firebase from 'firebase/app';
+import { Component, Input, OnInit } from '@angular/core';
+import { Lightbox } from 'angular2-lightbox';
 
 @Component({
   selector: 'app-products',
@@ -12,22 +10,46 @@ import * as firebase from 'firebase/app';
 })
 
 export class ProductsComponent implements OnInit {
-  database = firebase.database();
-  data: FirebaseListObservable<any[]>;
-  ref: any;
-  @Input()
-  db: string;
-  @Input()
-  heading: string;
-  @Input()
-  content: string;
+  data = [];
+  private album = [];
+  @Input() db: string;
+  @Input() heading: string;
+  @Input() content: string;
 
-  constructor(af: AngularFireDatabase) {
-    this.ref = af;
-  }
+  constructor(private ds: DatabaseService, private lightbox: Lightbox) { }
 
   ngOnInit() {
-    this.data = this.ref.list(this.db);
+    switch (this.db) {
+      case 'traditional':
+        this.data = this.ds.getTraditional();
+        break;
+      case 'coconut':
+        this.data = this.ds.getCoconut();
+        break;
+      case 'bath':
+        this.data = this.ds.getBath();
+        break;
+      case 'balms':
+        this.data = this.ds.getBalms();
+        break;
+      default: console.log('That is not a valid database reference.');
+        break;
+    }
+    this.populateAlbum(this.data);
+  }
+
+  populateAlbum(data: any[]) {
+    for (let i = 0; i < data.length; i++) {
+      this.album.push({
+        src: data[i].src,
+        caption: data[i].text,
+        thumb: ''
+      });
+    }
+  }
+
+  open(index: number) {
+    this.lightbox.open(this.album, index, { wrapAround: true });
   }
 
 }
