@@ -1,7 +1,9 @@
 <div class="card">
-  <img class="card-img-top img-fluid" [src]="src" alt="{{alt}}"/>
+  <img class="card-img-top img-fluid" [src]="src" alt="{{title}}" />
   <div class="card-body p-0">
-    <h4 class="card-title m-2 ml-3">{{title}}</h4>
-    <p class="card-text m-2 ml-3">{{text}}</p>
+    <div class="info text-right">
+      <i class="fa fa-info-circle mt-1 mr-1"></i>
+    </div>
+    <h4 class="card-title text-center mt-2">{{title}}</h4>
   </div>
 </div>

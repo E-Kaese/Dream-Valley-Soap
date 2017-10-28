@@ -25,4 +25,10 @@ export class NavbarComponent implements OnInit {
     this.fbLink = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDreamValleyHandmadeSoap%2F&tabs=timeline&width=' + this.width + '&height=450&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId');
   }
 
+  toggle() {
+    if (getComputedStyle(document.getElementById('toggler'), null).display !== 'none') {
+      document.getElementById('toggler').click();
+    }
+  }
+
 }

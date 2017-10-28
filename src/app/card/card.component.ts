@@ -9,17 +9,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
   src: SafeUrl;
 
-  @Input()
-  url: string;
-
-  @Input()
-  alt: string;
-
-  @Input()
-  title: string;
-
-  @Input()
-  text: string;
+  @Input() url: string;
+  @Input() title: string;
+  @Input() text: string;
 
   constructor(private sanitizer: DomSanitizer) {
   }

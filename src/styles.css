@@ -1,6 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('./assets/font-awesome-4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+@import url('../node_modules/angular2-lightbox/lightbox.css');
 
 html {
     padding-top: 120px;

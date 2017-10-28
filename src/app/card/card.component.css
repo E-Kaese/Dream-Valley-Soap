@@ -1,5 +1,22 @@
 .card{
     background-color: #444444;
     color: white;
-    margin: 20px 10px;
+    margin: 2rem 1rem;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.info{
+    position: absolute;
+    z-index: 10;
+    font-size: 18px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    .card{
+        margin: 1rem 0.5rem;
+    }
 }

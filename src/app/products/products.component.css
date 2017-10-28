@@ -1,5 +1,5 @@
 .products{
-    margin: 20px 0px;
+    width: 100% !important;
 }
 
 .header{
@@ -8,4 +8,10 @@
 
 .cards{
     padding: 0px 10%;
+}
+
+@media screen and (max-width: 1024px){
+    .cards{
+        padding: 0px;
+    }
 }
