@@ -8,13 +8,14 @@ import { FAQComponent } from './faq/faq.component';
 import { TraditionalSoapComponent } from './traditional-soap/traditional-soap.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
-    { path: 'faq', component: FAQComponent },
-    { path: 'traditional', component: TraditionalSoapComponent },
-    { path: 'bathandbody', component: BathAndBodyComponent },
-    { path: 'coconutandclay', component: CoconutAndClayComponent },
-    { path: 'balms', component: BalmsComponent },
+    {path: '', redirectTo: '/home', pathMatch: 'full'},
+    {path: 'home', component: HomeComponent},
+    {path: 'faq', component: FAQComponent},
+    {path: 'traditional', component: TraditionalSoapComponent},
+    {path: 'bathandbody', component: BathAndBodyComponent},
+    {path: 'coconutandclay', component: CoconutAndClayComponent},
+    {path: 'balms', component: BalmsComponent},
+    {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -22,4 +23,4 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 
-export class AppRoutingModule {}
+export class AppRoutingModule { }

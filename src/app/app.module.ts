@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { LightboxModule } from 'angular2-lightbox';
+import { MetaModule, MetaLoader, MetaStaticLoader, PageTitlePositioning } from '@ngx-meta/core';
 
 import { AppComponent } from './app.component';
 import { BalmsComponent } from './balms/balms.component';
@@ -30,6 +31,24 @@ export const firebaseConfig = {
   messagingSenderId: '699302150733'
 };
 
+export function metaFactory(): MetaLoader {
+  return new MetaStaticLoader({
+    pageTitlePositioning: PageTitlePositioning.PrependPageTitle,
+    pageTitleSeparator: ' - ',
+    applicationName: 'Dream Valley Soap',
+    defaults: {
+      author: 'Ernst Kaese',
+      title: 'Dream Valley Soap',
+      // tslint:disable-next-line:max-line-length
+      description: 'Dream Valley Soap makes soap, balms and creams. All our products are carefully handcrafted with quality natural oils and ingredients sourced locally.',
+      // tslint:disable-next-line:max-line-length
+      'og:image': 'https://firebasestorage.googleapis.com/v0/b/dvsoap.appspot.com/o/Images%2FDV-Logo-Rectangle.png?alt=media&token=03c51d87-e030-4ba6-b37c-489ae661e1c0',
+      'og:type': 'website',
+      'og:locale': 'en'
+    }
+  });
+}
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -39,6 +58,10 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     LightboxModule,
+    MetaModule.forRoot({
+      provide: MetaLoader,
+      useFactory: (metaFactory)
+    })
   ],
   declarations: [
     AppComponent,
@@ -52,7 +75,7 @@ export const firebaseConfig = {
     NavbarComponent,
     ProductsComponent,
     TraditionalSoapComponent,
-],
+  ],
   providers: [DatabaseService],
   bootstrap: [AppComponent]
 })

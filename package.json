@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@ngx-meta/core": "^4.0.1",
     "angular2-lightbox": "^1.2.1",
     "angularfire2": "^5.0.0-rc.3",
     "bootstrap": "^4.0.0-beta",

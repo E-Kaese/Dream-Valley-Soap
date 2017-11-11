@@ -2,56 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <base href="/">
-  <title>Dream Valley Soap</title>
-  <meta name="description" content="Dream Valley Soap makes soap, balms and creams. All our products are carefully handcrafted with quality natural oils and
-  ingredients sourced locally. Our Soaps are handcrafted with quality oils and lightly scented with essential oils
-  and herbs. After a good long maturing time they are mild, nourishing and moisturising.">
-  <meta name="author" content="Ernst Kaese">
-  <meta name="robots" content="index,follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <base href="/">
+    <title>Dream Valley Soap</title>
+    <meta name="description" content="Dream Valley Soap makes soap, balms and creams. All our products are carefully handcrafted with quality natural oils and ingredients sourced locally.">
+    <meta name="keywords" content="Dream Valley Soap, dvsoap, Handmade, Natural, South Africa, Soap">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "HealthAndBeautyBusiness",
+            "url": "https://dvsoap.co.za",
+            "description": "Dream Valley Soap makes soap, balms and creams. All our products are carefully handcrafted with quality natural oils and ingredients sourced locally.",
+            "openingHours": "09:00 - 17:00",
+            "name": "Dream Valley Soap",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/dvsoap.appspot.com/o/Images%2FDV-Logo-Rectangle.png?alt=media&token=03c51d87-e030-4ba6-b37c-489ae661e1c0",
+            "image": "https://firebasestorage.googleapis.com/v0/b/dvsoap.appspot.com/o/Images%2FDV-Logo-Rectangle.png?alt=media&token=03c51d87-e030-4ba6-b37c-489ae661e1c0",
+            "telephone": "084 455 6665"
+        }
+    </script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109039926-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-109039926-1');
+    </script>
 </head>
 
 <body class="container-fluid p-0 m-0">
-  <app-root>
-    <style>
-      .loading {
-        text-align: center;
-        height: 100vh;
-        font-family: 'Open Sans', sans-serif;
-        background-image: url('./assets/img/symphony.png');
-        margin-top: -120px;
-        padding-top: 120px;
-      }
-
-      .loading > h1{
-        margin: 0px;
-        padding-top: 5rem;
-      }
-
-      body{
-        margin: 0px;
-        padding: 0px;
-      }
-    </style>
-    <div class="loading">
-      <h1>Your soaps are curing...</h1>
-    </div>
-  </app-root>
-  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
-  <script>
-    var config = {
-      apiKey: "AIzaSyAZ9y2T1lYy3_j1JSYikPswA3WfBmEbhYo",
-      authDomain: "dvsoap.firebaseapp.com",
-      databaseURL: "https://dvsoap.firebaseio.com",
-      projectId: "dvsoap",
-      storageBucket: "dvsoap.appspot.com",
-      messagingSenderId: "699302150733"
-    };
-    firebase.initializeApp(config);
-  </script>
+    <app-root>
+        <style>
+            .loading {
+                text-align: center;
+                height: 100vh;
+                font-family: 'Open Sans', sans-serif;
+                background-image: url('./assets/img/symphony.png');
+                margin-top: -120px;
+                padding-top: 120px;
+            }
+            
+            .loading>h1 {
+                margin: 0px;
+                padding-top: 5rem;
+            }
+            
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+        <div class="loading">
+            <h1>Your soaps are curing...</h1>
+        </div>
+    </app-root>
 </body>
 
 </html>
