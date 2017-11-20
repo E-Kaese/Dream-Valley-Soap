@@ -2,8 +2,11 @@
 @import url('./assets/font-awesome-4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 @import url('../node_modules/angular2-lightbox/lightbox.css');
-
 html {
     padding-top: 120px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
 }

@@ -44,7 +44,9 @@ export function metaFactory(): MetaLoader {
       // tslint:disable-next-line:max-line-length
       'og:image': 'https://firebasestorage.googleapis.com/v0/b/dvsoap.appspot.com/o/Images%2FDV-Logo-Rectangle.png?alt=media&token=03c51d87-e030-4ba6-b37c-489ae661e1c0',
       'og:type': 'website',
-      'og:locale': 'en'
+      'og:locale': 'en',
+      // tslint:disable-next-line:max-line-length
+      keywords: 'Dream Valley Soap, Handmade, Natural, South Africa, Worcester, Groenstoor, Greenstore, Western Cape, Soap, Traditional Soap, Coconut and Clay Soap'
     }
   });
 }
