@@ -40,7 +40,7 @@ export function metaFactory(): MetaLoader {
       author: 'Ernst Kaese',
       title: 'Dream Valley Soap',
       // tslint:disable-next-line:max-line-length
-      description: 'Dream Valley Soap makes soap, balms and creams. All our products are carefully handcrafted with quality natural oils and ingredients sourced locally.',
+      description: 'Dream Valley Soap makes soap, balms and creams. All our products are carefully handcrafted with quality natural oils and ingredients sourced locally. Safe for sensitive skin. Our soaps are deliciously decadent. Great for everyday use or as a luxurious gift.',
       // tslint:disable-next-line:max-line-length
       'og:image': 'https://firebasestorage.googleapis.com/v0/b/dvsoap.appspot.com/o/Images%2FDV-Logo-Rectangle.png?alt=media&token=03c51d87-e030-4ba6-b37c-489ae661e1c0',
       'og:type': 'website',
